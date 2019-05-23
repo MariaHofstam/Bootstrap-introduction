@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+  <title>Bootstrap introduction project</title>
+</head>
+
+<body class="container bg-info text-white">
+  <header class="mb-2">
+    <h1 class="display-3 text-center my-4">Bootstrap introduction</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg" alt="logo" style="width:100px;">
+          </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.w3schools.com/">
+            <h3>w3schools</h3>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form">
+            <h3>Mjau form</h3>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#demo">
+            <h3>Pictures</h3>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="demo" class="carousel slide text-center mb-5" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" alt="fierce">
+        </div>
+        <div class="carousel-item">
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" alt="focus">
+        </div>
+        <div class="carousel-item">
+          <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="cute">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+  <section class="row mb-4">
+      <!-- A vertical navbar -->
+      <nav class="navbar bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" href="#Art1">Quit taking photos of me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Art2">Please do not disturb my nap</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="#Art3">I am cat … let me scratch</a>
+          </li>
+        </ul>
+  
+      </nav>
+      <article class="col" id="Art1">
+          <strong>Quit taking photos of me (I’m not a Kardashian)</strong>
+          <p>You humans can’t seem to stop snapping pix with your phones when you’re around us, but you resort to sneaky tactics like waving around fun toys to get our attention 
+          but dropping them as soon as we turn around. This is cruel. If we cats are willing to let you capture us on film, the least you can do is provide us with a bit of play 
+          time in exchange—or let a cartoon cat amuse you instead. There is one thing that you don’t have to worry about when it comes to photography: Camera flashes do not harm 
+          cats’ eyes. But they will frequently produce a spooky glow caused by the tapetum lucidum, a layer of ultra-reflective cells in feline eyes which helps us see in low light.</p>
+      </article>
+      <article class="col" id="Art2">
+        <strong>Please do not disturb my nap on your laptop or keyboard</strong>
+        <p>You people talk and talk about how much you need to work on the computer so you wake us up and push us off, but we know what you’re really planning to do on them: 
+          watch videos of cats. Weird. Don’t you humans realize that cats must get an average of 12 to 16 hours of shut-eye a day, or we’re just useless? Also, our delicate 
+          cat bodies need the warmth from your computer: Our ideal temperature is 20 degrees higher than that of you humans.</p>
+      </article>
+      <article class="col" id="Art3" >
+        <strong>I am cat … let me scratch</strong>
+        <p> Just like you clip and file your nails so they don’t reach Guinness Record lengths, we cats must maintain our claws. One cat behavior is by scratching, which helps 
+          us remove dead nail growth. There are two other important explanations behind why we scratch: We do it to mark our territory (we’ve got scent glands on our paws—how 
+          cool is that?) or to stretch (how do you think we stay so graceful?). Sadly, when a sofa or rug becomes our favorite spot to scratch, some of you resort to declawing 
+          us. We beg you not to—it would be comparable to your having the ends of your fingers cut off. Instead, get us a nifty scratching post (you might have to experiment 
+          with different models until you find one we like), rub it with a little catnip, and give us a treat whenever we use it.</p>
+         
+      </article>
+  </section>
+  <div class="row mb-5">
+      <div class="col-sm-6 " id="form">
+          <h2>Mjau form</h2>
+          <form action="/action_page.php">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="tel">Phone number:</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Enter phone number" name="tel">
+              </div>
+              <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+      </div>
+      <div class="col-sm-6 row-mt-5">
+            <img src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" alt="Image" width="530">
+      </div>
+  </div>
+
+ 
+  
+ 
+  <footer>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <i style='font-size:24px' class='far'>&#xf1f9; Maria Hofstam</i>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Top</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"></ul>
+      </div>
+    </nav>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
